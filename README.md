@@ -1,10 +1,16 @@
 # Sync Keepass DB from Yandex Drive to Github
 
-This script periodically syncs your Keepass database from yandexdisk to github when changes are made. It allows you to have a history of file changes and avoid accidental file loss or corruption.
+This script periodically syncs your [Keepass](https://keepass.info/) database from Yandex Disk to Github repo when changes are made. 
+
+It allows you to have a history of file changes and avoid accidental file loss or corruption.
 
 Create `.env` file with the following settings:
 
+```sh
+touch .env
 ```
+
+```ini
 YD_USER="<Your Yandex user>"
 YD_PASSWORD="<Your Yandex user password>"
 YD_KEEPASS_FILE="<The path where your Keepass database is located on the Yandex disk>"
@@ -16,6 +22,6 @@ DELAY=1m
 
 Run script:
 
-```
+```sh
 docker compose up -d
 ```
