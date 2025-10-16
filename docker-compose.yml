@@ -1,0 +1,15 @@
+services:
+  sync:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    environment:
+      YD_USER: "${YD_USER}"
+      YD_PASSWORD: "${YD_PASSWORD}"
+      YD_KEEPASS_FILE: "${YD_KEEPASS_FILE}"
+      GIT_REPO: "${GIT_REPO}"
+      GIT_USER_NAME: "${GIT_USER_NAME}"
+      GIT_USER_EMAIL: "${GIT_USER_EMAIL}"
+      LOCAL_REPO_DIR: repo
+      DELAY: "${DELAY}"
