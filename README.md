@@ -4,12 +4,14 @@ This script periodically syncs your [Keepass](https://keepass.info/) database fr
 
 It allows you to have a history of file changes and avoid accidental file loss or corruption.
 
-Create `.env` file with the following settings:
+Create `.env` file:
 
 ```sh
 touch .env
 ```
 
+With the following content:
+ 
 ```ini
 YD_USER="<Your Yandex user>"
 YD_PASSWORD="<Your Yandex user password>"
